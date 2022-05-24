@@ -1,0 +1,3 @@
+[submodule "Estrutura De Dados/huffman"]
+	path = Estrutura De Dados/huffman
+	url = git@github.com:rgalhos/huffman.git
