@@ -1,15 +1,15 @@
 // Current robot position
-const robot_pos_c = [2,2];
+const robot_pos_c = [0, 9];
 // Desired robot position
-const robot_pos_d = [9,9];
+const robot_pos_d = [2, 0];
 
 const inf = Infinity;
 const occupancy = [
-    [inf,   1,   1,   1,   1, inf, inf, inf,   1,   1],
-    [inf,   1,   1,   1,   1, inf, inf, inf,   1,   1],
-    [inf,   1,   1,   1,   1, inf, inf, inf,   1,   1],
-    [inf,   1,   1,   1,   1,   1,   1,   1,   1,   1],
-    [inf,   1,   1,   1,   1,   1,   1,   1,   1,   1],
+    [inf,  1,   1,   1,   1,  inf, inf, inf,   1,   1],
+    [inf,  1,   1,   1,   1,  inf, inf, inf,   1,   1],
+    [inf,  1,   1,   1,   1,  inf, inf, inf,   1,   1],
+    [inf,  1,   1,   1,   1,    1,   1,   1,   1,   1],
+    [inf,  1,   1,   1,   1,    1,   1,   1,   1,   1],
     [inf, inf, inf, inf, inf, inf,   1,   1, inf,   1],
     [  1,   1,   1,   1,   1, inf,   1,   1, inf,   1],
     [  1,   1,   1, inf,   1, inf,   1,   1, inf,   1],
