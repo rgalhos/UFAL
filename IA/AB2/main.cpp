@@ -11,9 +11,9 @@ using namespace std;
 
 int main(int argc, char **argv)
 {
-    if (argc < 3)
+    if (argc < 4)
     {
-        printf("Use \"%s [arquivo.txt] [teste.txt]\" roda o programa com uma base de teste.\n\n"
+        printf("Use \"%s [arquivo.txt] [teste.txt] [valor de K]\" roda o programa com uma base de teste.\n\n"
                "Mais informações no README\n",
                argv[0]);
         return 1;
@@ -60,7 +60,7 @@ int main(int argc, char **argv)
         testfile >> _species >> island >> culmen_length_mm >> culmen_depth_mm >> flipper_length_mm >> body_mass_g >> sex;
         Penguin p(_species, island, culmen_length_mm, culmen_depth_mm, flipper_length_mm, body_mass_g, sex);
 
-        string classe = knn.classificarAmostra(p, 9);
+        string classe = knn.classificarAmostra(p, stoi(argv[3]));
 
         std::cout << "Esperado: " << _species << "\t Obteve: " << classe << endl;
 

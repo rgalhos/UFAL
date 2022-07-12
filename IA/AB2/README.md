@@ -11,4 +11,4 @@ sed -e 's/,/ /g' -e '1d' penguins_size.csv | grep -v 'NA NA' >> penguins_size_no
 ## Como rodar
 Basta rodar `make` (requer g++), ou compilar o arquivo `main.cpp` com algum outro compilador.
 
-`./main [arquivo.txt] [teste.txt]` roda o programa com uma base de teste.
+`./main [arquivo.txt] [teste.txt] [valor de K]` roda o programa com uma base de teste.
